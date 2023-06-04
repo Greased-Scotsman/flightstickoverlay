@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Orbitron:400,500');
 
 .custom.controller {
+    right:200px;
     width: 1900px;
     height: 360px;
     font-family: 'Orbitron', sans-serif;
@@ -82,13 +83,17 @@
 
 .custom .stick.left{
     top: 50%;
-    left: calc(50% + 150px);
+    left: 50%;
+}
+
+.custom .stick.right{
+    display: none
 }
 
 .custom .bumpers{
     position: absolute;
     top: 200px;
-    left: 150px;
+    left: -150px;
 }
 
 .custom .abxy{
