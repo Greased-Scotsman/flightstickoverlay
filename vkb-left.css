@@ -85,11 +85,6 @@
     left: 50%;
 }
 
-/*Hiding the unused stick*/
-.custom .stick.right{
-    display: none
-}
-
 .custom .bumpers{
     position: absolute;
     top: 0;
@@ -102,23 +97,49 @@
     top: 0;
 }
 
-/* FA Button */
+/* Boost Button */
 .custom .bumper.right:after{
-    content: "FA";
+    content: "BOOST";
     left: 68px;
     top: 45px;
     word-wrap: normal;
     width: 49px;
     transition: none
 }
-/* FA Button when set to off */
-.custom .bumper.right.pressed:after{
-    content: "FA OFF";
+
+/* This part makes up the background of the Yaw part */
+.custom .triggers{
+    width: 129px;
+    height: 20px;
+    display: inline-block;
+    background: black;
+    position: absolute;
+    border: 2px solid #03b2e1;
+    border-radius: 20px;
+    background-image: linear-gradient(90deg, transparent 48%, #002f3b 49%, #002f3b 50%, #002f3b 51%, transparent 52%, transparent);
+    background-size: 100% calc(100% - 10px);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 5px;
+    right: 0;
+    top: 125px
 }
 
-/*Chaff Button*/
-.custom .button.y:after{
-    content: "CHAFF";
-    right: 80px;
-    top: 0px
+/* Here we position the title for the Roll axis */
+.custom .triggers:after{
+    content: "Roll";
+    display: inline-block;
+    position: absolute;
+    font-size: 14px;
+    color: #03b2e1;
+    top: -1.5em;
+    right: 50%;
+    transform-origin: center;
+    transform: translateX(50%);
+}
+
+/* This is to position the Yaw pointer */
+.custom .stick.right{
+    top: calc(-55px);
+    left: 50%;
 }
