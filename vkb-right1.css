@@ -49,7 +49,7 @@
     border-radius: 15px;
     background-image: linear-gradient(0deg, transparent 48%, #002f3b 49%, #002f3b 50%, #002f3b 51%, transparent 52%, transparent), linear-gradient(90deg, transparent 48%, #002f3b 49%, #002f3b 50%, #002f3b 51%, transparent 52%, transparent);
     top: calc(195px);
-    right: -100%;
+    right: -10%;
     transform: translateX(-100%);
     background-size: calc(100% - 15px) 100%, 100% calc(100% - 15px);
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@
 }
 
 .custom .sticks:before{
-    content: "PITCH";
+    content: "Yaw";
     display: inline-block;
     position: absolute;
     font-size: 15px;
@@ -69,7 +69,7 @@
 }
 
 .custom .sticks:after{
-    content: "ROLL";
+    content: "Pitch";
     display: inline-block;
     position: absolute;
     font-size: 15px;
@@ -82,18 +82,13 @@
 
 .custom .stick.left{
     top: 50%;
-    left: 50%;
-}
-
-/*Hiding the unused stick*/
-.custom .stick.right{
-    display: none
+    left: calc(50% + 150px);
 }
 
 .custom .bumpers{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 200px;
+    left: 150px;
 }
 
 .custom .abxy{
@@ -102,23 +97,12 @@
     top: 0;
 }
 
-/* FA Button */
+/* Fire Button */
 .custom .bumper.right:after{
-    content: "FA";
+    content: "FIRE";
     left: 68px;
     top: 45px;
     word-wrap: normal;
     width: 49px;
     transition: none
-}
-/* FA Button when set to off */
-.custom .bumper.right.pressed:after{
-    content: "FA OFF";
-}
-
-/*Chaff Button*/
-.custom .button.y:after{
-    content: "CHAFF";
-    right: 80px;
-    top: 0px
 }
