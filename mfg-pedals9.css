@@ -90,9 +90,8 @@
 }
 
 .custom .stick.right{
-    display: none;
-    /*top: calc(-120px);
-    left: 15px;*/
+    top: calc(-120px);
+    left: 30px;
 }
 
 .custom .bumpers{
