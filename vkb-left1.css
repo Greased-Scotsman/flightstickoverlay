@@ -49,7 +49,7 @@
     border-radius: 15px;
     background-image: linear-gradient(0deg, transparent 48%, #002f3b 49%, #002f3b 50%, #002f3b 51%, transparent 52%, transparent), linear-gradient(90deg, transparent 48%, #002f3b 49%, #002f3b 50%, #002f3b 51%, transparent 52%, transparent);
     top: calc(195px);
-    right: -100%;
+    right: -50%;
     transform: translateX(-100%);
     background-size: calc(100% - 15px) 100%, 100% calc(100% - 15px);
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@
 }
 
 .custom .sticks:before{
-    content: "Up-Down";
+    content: "U-D";
     display: inline-block;
     position: absolute;
     font-size: 15px;
@@ -69,7 +69,7 @@
 }
 
 .custom .sticks:after{
-    content: "Left-Right";
+    content: "L-R";
     display: inline-block;
     position: absolute;
     font-size: 15px;
@@ -107,7 +107,7 @@
     transition: none
 }
 
-/* This part makes up the background of the Yaw part */
+/* This part makes up the background of the Roll part */
 .custom .triggers{
     width: 129px;
     height: 20px;
